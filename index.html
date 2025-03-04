@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gepettos Sang</title>
+    <title>Musikafspiller</title>
     <style>
         body { 
             font-family: Arial, sans-serif; 
@@ -11,7 +11,7 @@
             padding: 50px; 
             background-color: #f9f9f9;
         }
-        #lyrics { 
+        .lyrics { 
             display: none; 
             margin-top: 20px; 
             padding: 20px; 
@@ -26,6 +26,8 @@
             color: #007BFF; 
             font-size: 20px; 
             cursor: pointer;
+            display: block;
+            margin: 10px 0;
         }
         a:hover {
             text-decoration: underline;
@@ -42,32 +44,46 @@
         }
         audio {
             margin-top: 20px;
+            display: none;
         }
     </style>
     <script>
-        function toggleLyrics() {
-            var lyrics = document.getElementById("lyrics");
-            var player = document.getElementById("audioPlayer");
+        function playSong(songId, audioId, lyricsId) {
+            var allLyrics = document.getElementsByClassName("lyrics");
+            var allAudio = document.getElementsByTagName("audio");
 
-            if (lyrics.style.display === "none" || lyrics.style.display === "") {
-                lyrics.style.display = "block";
-                player.play();
-            } else {
-                lyrics.style.display = "none";
+            // Skjul alle tekster og stop al lyd
+            for (var i = 0; i < allLyrics.length; i++) {
+                allLyrics[i].style.display = "none";
             }
+            for (var i = 0; i < allAudio.length; i++) {
+                allAudio[i].pause();
+                allAudio[i].currentTime = 0;
+                allAudio[i].style.display = "none";
+            }
+
+            // Vis den valgte sangtekst og start musikken
+            document.getElementById(lyricsId).style.display = "block";
+            var audioPlayer = document.getElementById(audioId);
+            audioPlayer.style.display = "block";
+            audioPlayer.play();
         }
     </script>
 </head>
 <body>
-    <h1>Gepettos Sang</h1>
-    <a href="#" onclick="toggleLyrics()">🎵 Klik for at afspille og vise teksten</a>
-    
-    <audio id="audioPlayer" controls>
+    <h1>Musikafspiller</h1>
+
+    <a href="#" onclick="playSong('gepettos', 'audioGepettos', 'lyricsGepettos')">🎵 Gepettos Sang</a>
+    <a href="#" onclick="playSong('hvalen', 'audioHvalen', 'lyricsHvalen')">🎵 Fanget i hvalen</a>
+
+    <!-- Audio afspiller for Gepettos Sang -->
+    <audio id="audioGepettos" controls>
         <source src="https://www.dropbox.com/scl/fi/x14c459rso41zqgi4rrr6/Gepettos-Sang.mp3?rlkey=s2ahtne4ai5p9oi0tl1gtpqgx&st=vop9bvk1&raw=1" type="audio/mpeg">
         Din browser understøtter ikke afspilning af lyd.
     </audio>
 
-    <div id="lyrics">
+    <!-- Sangtekst for Gepettos Sang -->
+    <div id="lyricsGepettos" class="lyrics">
         <h2>Gepettos sang</h2>
         <p>
             Jeg vil drømme om et barn<br>
@@ -103,5 +119,60 @@
             Og giv mig et barn
         </p>
     </div>
+
+    <!-- Audio afspiller for Fanget i Hvalen -->
+    <audio id="audioHvalen" controls>
+        <source src="https://www.dropbox.com/scl/fi/p0x5fwxcskgjaday315rs/Fanget-i-hvalen.mp3?rlkey=jixxtsg63vilm57gawpdiv2s4&st=o2mozksj&raw=1" type="audio/mpeg">
+        Din browser understøtter ikke afspilning af lyd.
+    </audio>
+
+    <!-- Sangtekst for Fanget i Hvalen -->
+    <div id="lyricsHvalen" class="lyrics">
+        <h2>Fanget i hvalen</h2>
+        <p>Hvor er jeg<br>
+        Hvad laver jeg her<br>
+        Det er mørkt og jeg fryser<br>
+        Og alting gør ondt</p>
+
+        <p>Hvorfor mig<br>
+        Jeg var jo på vej<br>
+        Og nu slutter det her<br>
+        Jeg har nået havets bund</p>
+
+        <p>Vi ku være sammen nu<br>                                               
+        Hjemme i varmen du<br>
+        Er søvnig men også glad<br>
+        For træt til din aftensmad<br>
+        Stå op til en glad dag<br>
+        Dem ku der være mange af<br>
+        Er det her en tabt sag<br>
+        Er det her mit sidste slag</p>
+
+        <p>Hjælp mig nu<br>
+        Luk mig ud<br>
+        Jeg skal finde dig<br>
+        Hvor er du Pinocchio</p>
+
+        <p>Gode fe<br>
+        Kan du ikke se<br>
+        Han har brug for mig<br>
+        Hvis han skal lære at blive god</p>
+
+        <p>Vi ku være sammen nu<br>                                                
+        Hjemme i varmen du<br>
+        Er søvnig men også glad<br>
+        For træt til din aftensmad<br>
+        Stå op til en glad dag<br>
+        Dem ku der være mange af<br>
+        Er det her en tabt sag<br>
+        Er det her mit sidste slag</p>
+
+        <p>Hvor er du<br>
+        Pinocchio<br>
+        Jeg kommer nu<br>
+        Pinocchio<br>
+        Hvor er du</p>
+    </div>
+
 </body>
 </html>
