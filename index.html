@@ -49,9 +49,11 @@
             var lyrics = document.getElementById("lyrics");
             var player = document.getElementById("audioPlayer");
 
-            if (lyrics.style.display === "none") {
+            if (lyrics.style.display === "none" || lyrics.style.display === "") {
                 lyrics.style.display = "block";
                 player.play();
+            } else {
+                lyrics.style.display = "none";
             }
         }
     </script>
