@@ -52,7 +52,6 @@
             var allLyrics = document.getElementsByClassName("lyrics");
             var allAudio = document.getElementsByTagName("audio");
 
-            // Skjul alle tekster og stop al lyd
             for (var i = 0; i < allLyrics.length; i++) {
                 allLyrics[i].style.display = "none";
             }
@@ -62,7 +61,6 @@
                 allAudio[i].style.display = "none";
             }
 
-            // Vis den valgte sangtekst og start musikken
             document.getElementById(lyricsId).style.display = "block";
             var audioPlayer = document.getElementById(audioId);
             audioPlayer.style.display = "block";
@@ -78,44 +76,44 @@
     <a href="#" onclick="playSong('audioPinocchio', 'lyricsPinocchio')">🎵 Pinocchio Slutsang</a>
     <a href="#" onclick="playSong('audioSlaraffenland', 'lyricsSlaraffenland')">🎵 Slaraffenland</a>
 
-    <!-- Audio afspiller for Gepettos Sang -->
     <audio id="audioGepettos" controls>
-        <source src="https://www.dropbox.com/scl/fi/x14c459rso41zqgi4rrr6/Gepettos-Sang.mp3?rlkey=s2ahtne4ai5p9oi0tl1gtpqgx&st=vop9bvk1&raw=1" type="audio/mpeg">
+        <source src="https://www.dropbox.com/scl/fi/x14c459rso41zqgi4rrr6/Gepettos-Sang.mp3?raw=1" type="audio/mpeg">
     </audio>
     <div id="lyricsGepettos" class="lyrics">
         <h2>Gepettos sang</h2>
-        <p>Jeg vil drømme om et barn<br>Et barn som jeg kan holde af...</p>
+        <p>Jeg vil drømme om et barn<br>Et barn som jeg kan holde af<br>Og holde om og passe på<br>Jeg vil gerne være én</p>
+        <p>Én som man kan stole på<br>Én som siger det nok skal gå</p>
+        <p>Åh lad det ske nu<br>Bare denne gang<br>Opfyld mit ønske<br>Og giv mig et barn</p>
     </div>
 
-    <!-- Audio afspiller for Fanget i Hvalen -->
     <audio id="audioHvalen" controls>
-        <source src="https://www.dropbox.com/scl/fi/p0x5fwxcskgjaday315rs/Fanget-i-hvalen.mp3?rlkey=jixxtsg63vilm57gawpdiv2s4&st=o2mozksj&raw=1" type="audio/mpeg">
+        <source src="https://www.dropbox.com/scl/fi/p0x5fwxcskgjaday315rs/Fanget-i-hvalen.mp3?raw=1" type="audio/mpeg">
     </audio>
     <div id="lyricsHvalen" class="lyrics">
         <h2>Fanget i hvalen</h2>
-        <p>Hvor er jeg<br>Hvad laver jeg her...</p>
+        <p>Hvor er jeg<br>Hvad laver jeg her<br>Det er mørkt og jeg fryser<br>Og alting gør ondt</p>
+        <p>Hvorfor mig<br>Jeg var jo på vej<br>Og nu slutter det her<br>Jeg har nået havets bund</p>
     </div>
 
-    <!-- Audio afspiller for Pinocchio Slutsang -->
     <audio id="audioPinocchio" controls>
-        <source src="https://www.dropbox.com/scl/fi/oopi3f6n00isjibbnjdpr/Pinocchio-Slutsang.mp3?rlkey=bn9dzuwuqsyc1c0lvqle5b68v&st=3sx7mg9q&raw=1" type="audio/mpeg">
+        <source src="https://www.dropbox.com/scl/fi/oopi3f6n00isjibbnjdpr/Pinocchio-Slutsang.mp3?raw=1" type="audio/mpeg">
     </audio>
     <div id="lyricsPinocchio" class="lyrics">
         <h2>Pinocchio Slutsang</h2>
-        <p>Slå dine ører ud<br>Og lyt til denne sang...</p>
+        <p>Slå dine ører ud<br>Og lyt til denne sang<br>Den handler om en gammel mand som levede engang</p>
+        <p>Han boede helt alene<br>Han ønskede sig et barn<br>Og tænk engang det fik han så et rigtigt lille skarn</p>
     </div>
 
-    <!-- Audio afspiller for Slaraffenland -->
     <audio id="audioSlaraffenland" controls>
-        <source src="https://www.dropbox.com/scl/fi/ch1zewiof1mzsyycpdj03/Slaraffenland.mp3?rlkey=7iygpsvkzy5ism7dmpcsdp0ph&st=78o33pdq&raw=1" type="audio/mpeg">
+        <source src="https://www.dropbox.com/scl/fi/ch1zewiof1mzsyycpdj03/Slaraffenland.mp3?raw=1" type="audio/mpeg">
     </audio>
     <div id="lyricsSlaraffenland" class="lyrics">
         <h2>Slaraffenland</h2>
-        <p>Vi danser rundt<br>Vi svæver højt og lander blødt...</p>
-        <p>Kom lad dig lokke<br>Lyt til pjækketarmen...</p>
-        <p>Et bandeord<br>Jeg ikk’ må sige for min...</p>
-        <p>Slip balancen<br>Lad dig falde hen og...</p>
-        <p>Her’ ingen grænser<br>Og ingen voksne siger nej...</p>
+        <p>Vi danser rundt<br>Vi svæver højt og lander blødt<br>I vores leg<br>Er livet altid sukkersødt</p>
+        <p>Vi må det hele<br>Bestemmer selv, hvornår vi går i seng</p>
+        <p>Kom lad dig lokke<br>Lyt til pjækketarmen<br>Vi bygger grotte<br>Og gir’ den hele armen</p>
+        <p>Et bandeord<br>Jeg ikk’ må sige for min far og mor<br>Det må jeg råbe højt og tydeligt</p>
+        <p>Slip balancen<br>Lad dig falde hen og stå distancen</p>
     </div>
 
 </body>
