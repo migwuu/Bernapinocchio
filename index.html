@@ -69,7 +69,7 @@
     </script>
 </head>
 <body>
-    <h1>Pinocchio Tekst og musik</h1>
+    <h1>Pinocchio Tekst og Musik</h1>
 
     <a href="#" onclick="playSong('audioPinocchioStart', 'lyricsPinocchioStart')">🎵 Pinocchio Startsang</a>
     <a href="#" onclick="playSong('audioGepettos', 'lyricsGepettos')">🎵 Gepettos Sang</a>
@@ -77,12 +77,28 @@
     <a href="#" onclick="playSong('audioSlaraffenland', 'lyricsSlaraffenland')">🎵 Slaraffenland</a>
     <a href="#" onclick="playSong('audioPinocchio', 'lyricsPinocchioSlut')">🎵 Pinocchio Slutsang</a>
     
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/augustrosenbaum/pinocchio-start-sang&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-</iframe>
-    
+    <audio id="audioPinocchioStart" controls>
+        <source src="https://www.dropbox.com/scl/fi/ancptce7rqy8bb0sny4mt/Pinocchio-Start-Sang.mp3?dl=1" type="audio/mpeg">
+    </audio>
+
+    <audio id="audioGepettos" controls>
+        <source src="https://www.dropbox.com/scl/fi/x14c459rso41zqgi4rrr6/Gepettos-Sang.mp3?dl=1" type="audio/mpeg">
+    </audio>
+
+    <audio id="audioHvalen" controls>
+        <source src="https://www.dropbox.com/scl/fi/p0x5fwxcskgjaday315rs/Fanget-i-hvalen.mp3?dl=1" type="audio/mpeg">
+    </audio>
+
+    <audio id="audioSlaraffenland" controls>
+        <source src="https://www.dropbox.com/scl/fi/ch1zewiof1mzsyycpdj03/Slaraffenland.mp3?dl=1" type="audio/mpeg">
+    </audio>
+
+    <audio id="audioPinocchio" controls>
+        <source src="https://www.dropbox.com/scl/fi/oopi3f6n00isjibbnjdpr/Pinocchio-Slutsang.mp3?dl=1" type="audio/mpeg">
+    </audio>
+
     <div id="lyricsPinocchioStart" class="lyrics">
-    <h2>Pinocchio Startsang</h2>
+        <h2>Pinocchio Startsang</h2>
 
     <p>Slå dine ører ud<br>
     Og lyt til denne sang<br>
@@ -122,12 +138,9 @@
     Har I rytme så<br>
     Vis det lige nu</p>
 </div>
-    
-    <audio id="audioGepettos" controls>
-        <source src="https://www.dropbox.com/scl/fi/x14c459rso41zqgi4rrr6/Gepettos-Sang.mp3?dl=1" type="audio/mpeg">
-    </audio>
-   <div id="lyricsGepettos" class="lyrics">
-    <h2>Gepettos sang</h2>
+
+    <div id="lyricsGepettos" class="lyrics">
+        <h2>Gepettos sang</h2>
     <p>Jeg vil drømme om et barn<br>
     Et barn som jeg kan holde af<br>
     Og holde om og passe på<br>
@@ -156,11 +169,8 @@
     Og giv mig et barn</p>
 </div>
 
-    <audio id="audioHvalen" controls>
-        <source src="https://www.dropbox.com/scl/fi/p0x5fwxcskgjaday315rs/Fanget-i-hvalen.mp3?dl=1" type="audio/mpeg">
-    </audio>
-  <div id="lyricsHvalen" class="lyrics">
-    <h2>Fanget i hvalen</h2>
+    <div id="lyricsHvalen" class="lyrics">
+       <h2>Fanget i hvalen</h2>
 
     <p>Hvor er jeg<br>
     Hvad laver jeg her<br>
@@ -207,15 +217,9 @@
     Hvor er du</p>
 </div>
 
-  
-<audio id="audioPinocchio" controls>
-    <source src="https://www.dropbox.com/scl/fi/oopi3f6n00isjibbnjdpr/Pinocchio-Slutsang.mp3?dl=1" type="audio/mpeg">
-    Din browser understøtter ikke afspilning af lyd.
-</audio>
 
-<div id="lyricsPinocchioSlut" class="lyrics">
-    <h2>Pinocchio Slutsang</h2>
-
+    <div id="lyricsPinocchioSlut" class="lyrics">
+        <h2>Pinocchio Slutsang</h2>
     <p>Vi har været igennem tykt, igennem tyndt<br>
     Men vores eventyr, er lige begyndt<br>
     For nu skal vi være sammen, ha’ det sjovt<br>
@@ -235,48 +239,7 @@
     Åh åh åh Pinocchio<br>
     Endelig er vi hjemme, sammen igen</p>
 </div>
-
-    <audio id="audioSlaraffenland" controls>
-        <source src="https://www.dropbox.com/scl/fi/ch1zewiof1mzsyycpdj03/Slaraffenland.mp3?dl=1" type="audio/mpeg">
-    </audio>
-    <div id="lyricsSlaraffenland" class="lyrics">
-    <h2>Slaraffenland</h2>
-
-    <p>Vi danser rundt<br>
-    Vi svæver højt og lander blødt<br>
-    I vores leg<br>
-    Er livet altid sukkersødt<br>
-    Vi må det hele<br>
-    Bestemmer selv, hvornår vi går i seng</p>
-
-    <p>Kom lad dig lokke<br>
-    Lyt til pjækketarmen<br>
-    Vi bygger grotte<br>
-    Og gir’ den hele armen<br>
-    Vi må det hele<br>
-    Bestemmer selv, hvornår vi går i seng<br>
-    Her’ ingen grænser<br>
-    Og ingen voksne siger nej</p>
-
-    <p>Et bandeord<br>
-    Jeg ikk’ må sige for min far og mor<br>
-    Det må jeg råbe højt og tydeligt<br>
-    For i Slaraffenland der<br>
-    Må du næsten alt</p>
-
-    <p>Slip balancen<br>
-    Lad dig falde hen og<br>
-    Stå distancen<br>
-    Vinden tager dig med og<br>
-    Gir’ dig vinger<br>
-    Candyfloss og unicorns<br>
-    Her’ ingen grænser<br>
-    Og ingen voksne siger<br>
-    Husk dine handsker<br>
-    Og ingen voksne siger<br>
-    Tag ingen chancer<br>
-    Og ingen voksne siger nej</p>
-</div>
-
 </body>
 </html>
+    
+  
