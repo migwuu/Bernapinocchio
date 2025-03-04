@@ -71,20 +71,91 @@
 <body>
     <h1>Musikafspiller</h1>
 
+    <a href="#" onclick="playSong('audioPinocchioStart', 'lyricsPinocchioStart')">🎵 Pinocchio Startsang</a>
     <a href="#" onclick="playSong('audioGepettos', 'lyricsGepettos')">🎵 Gepettos Sang</a>
     <a href="#" onclick="playSong('audioHvalen', 'lyricsHvalen')">🎵 Fanget i hvalen</a>
-    <a href="#" onclick="playSong('audioPinocchio', 'lyricsPinocchio')">🎵 Pinocchio Slutsang</a>
     <a href="#" onclick="playSong('audioSlaraffenland', 'lyricsSlaraffenland')">🎵 Slaraffenland</a>
+    <a href="#" onclick="playSong('audioPinocchio', 'lyricsPinocchio')">🎵 Pinocchio Slutsang</a>
+    
+    <audio id="audioPinocchioStart" controls>
+    <source src="https://www.dropbox.com/scl/fi/ancptce7rqy8bb0sny4mt/Pinocchio-Start-Sang.mp3?raw=1" type="audio/mpeg">
+    Din browser understøtter ikke afspilning af lyd.
+</audio>
 
+<div id="lyricsPinocchioStart" class="lyrics">
+    <h2>Pinocchio Startsang</h2>
+
+    <p>Slå dine ører ud<br>
+    Og lyt til denne sang<br>
+    Den handler om en gammel mand som levede engang<br>
+    Han boede helt alene<br>
+    Han ønskede sig et barn<br>
+    Og tænk engang det fik han så et rigtigt lille skarn</p>
+
+    <p>Barnet skal igennem meget ondt<br>
+    Vil ikke spise sundt nej<br>
+    Bare rejse rundt i<br>
+    Stedet for at gå i skole og læse<br>
+    Det vil han da blæse på<br>
+    Hvordan skal det da mon gå<br>
+    Vil det ende godt</p>
+
+    <p>Og barnet det stak af<br>
+    Løb hjemme fra en dag<br>
+    Det endte i noget værre rod<br>
+    Og glemte hvad bessefar sagde<br>
+    At for at være god<br>
+    Så skal man tænke selv<br>
+    Hvis folk bliver ked af det man gør<br>
+    Skal man ikke gøre det vel</p>
+
+    <p>Bedstefar rejste over bjerg og dal<br>
+    Blev fanget i en hval men<br>
+    Han giver aldrig op for<br>
+    Han ved godt at<br>
+    der er brug for hjælp<br>
+    Når barnet ik har lært at<br>
+    passe på selv<br>
+    Så skal man træde til</p>
+
+    <p>Lad som om du er en lille flue<br>
+    Vores historie varer kun en uge<br>
+    Har I rytme så<br>
+    Vis det lige nu</p>
+</div>
+    
     <audio id="audioGepettos" controls>
         <source src="https://www.dropbox.com/scl/fi/x14c459rso41zqgi4rrr6/Gepettos-Sang.mp3?raw=1" type="audio/mpeg">
     </audio>
-    <div id="lyricsGepettos" class="lyrics">
-        <h2>Gepettos sang</h2>
-        <p>Jeg vil drømme om et barn<br>Et barn som jeg kan holde af<br>Og holde om og passe på<br>Jeg vil gerne være én</p>
-        <p>Én som man kan stole på<br>Én som siger det nok skal gå</p>
-        <p>Åh lad det ske nu<br>Bare denne gang<br>Opfyld mit ønske<br>Og giv mig et barn</p>
-    </div>
+   <div id="lyricsGepettos" class="lyrics">
+    <h2>Gepettos sang</h2>
+    <p>Jeg vil drømme om et barn<br>
+    Et barn som jeg kan holde af<br>
+    Og holde om og passe på<br>
+    Jeg vil gerne være én</p>
+
+    <p>Én som man kan stole på<br>
+    Én som siger det nok skal gå</p>
+
+    <p>Åh lad det ske nu<br>
+    Bare denne gang<br>
+    Opfyld mit ønske<br>
+    Og giv mig et barn</p>
+
+    <p>Jeg har aldrig lært at bede<br>
+    Er der nogen som hører mig<br>
+    Som bringer held<br>
+    Måske en fe</p>
+
+    <p>Når man føler ensomhed<br>
+    Har man aldrig valgt det selv<br>
+    Man trænger til en smule hjælp</p>
+
+    <p>Åh lad det ske nu<br>
+    Bare denne gang<br>
+    Opfyld mit ønske<br>
+    Og giv mig et barn</p>
+</div>
 
     <audio id="audioHvalen" controls>
         <source src="https://www.dropbox.com/scl/fi/p0x5fwxcskgjaday315rs/Fanget-i-hvalen.mp3?raw=1" type="audio/mpeg">
@@ -108,13 +179,43 @@
         <source src="https://www.dropbox.com/scl/fi/ch1zewiof1mzsyycpdj03/Slaraffenland.mp3?raw=1" type="audio/mpeg">
     </audio>
     <div id="lyricsSlaraffenland" class="lyrics">
-        <h2>Slaraffenland</h2>
-        <p>Vi danser rundt<br>Vi svæver højt og lander blødt<br>I vores leg<br>Er livet altid sukkersødt</p>
-        <p>Vi må det hele<br>Bestemmer selv, hvornår vi går i seng</p>
-        <p>Kom lad dig lokke<br>Lyt til pjækketarmen<br>Vi bygger grotte<br>Og gir’ den hele armen</p>
-        <p>Et bandeord<br>Jeg ikk’ må sige for min far og mor<br>Det må jeg råbe højt og tydeligt</p>
-        <p>Slip balancen<br>Lad dig falde hen og stå distancen</p>
-    </div>
+    <h2>Slaraffenland</h2>
+
+    <p>Vi danser rundt<br>
+    Vi svæver højt og lander blødt<br>
+    I vores leg<br>
+    Er livet altid sukkersødt<br>
+    Vi må det hele<br>
+    Bestemmer selv, hvornår vi går i seng</p>
+
+    <p>Kom lad dig lokke<br>
+    Lyt til pjækketarmen<br>
+    Vi bygger grotte<br>
+    Og gir’ den hele armen<br>
+    Vi må det hele<br>
+    Bestemmer selv, hvornår vi går i seng<br>
+    Her’ ingen grænser<br>
+    Og ingen voksne siger nej</p>
+
+    <p>Et bandeord<br>
+    Jeg ikk’ må sige for min far og mor<br>
+    Det må jeg råbe højt og tydeligt<br>
+    For i Slaraffenland der<br>
+    Må du næsten alt</p>
+
+    <p>Slip balancen<br>
+    Lad dig falde hen og<br>
+    Stå distancen<br>
+    Vinden tager dig med og<br>
+    Gir’ dig vinger<br>
+    Candyfloss og unicorns<br>
+    Her’ ingen grænser<br>
+    Og ingen voksne siger<br>
+    Husk dine handsker<br>
+    Og ingen voksne siger<br>
+    Tag ingen chancer<br>
+    Og ingen voksne siger nej</p>
+</div>
 
 </body>
 </html>
